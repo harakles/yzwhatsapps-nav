@@ -1,0 +1,5 @@
+pillow>=10.0
+playwright>=1.45
+anthropic>=0.60
+pywinauto>=0.6.8; sys_platform == "win32"
+mss>=9.0; sys_platform == "win32"
