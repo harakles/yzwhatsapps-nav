@@ -11,6 +11,8 @@ tabire / kritere uyanları **Claude yapay zekâsı** ile ayıklayıp listeleyen 
   eksikliği (ş→s, ı→i), eş anlamlılar dahil.
 - İsterseniz yapay zekâsız **kelime araması** (virgülle birden çok kelime).
 - Sonuçlar tablo olarak listelenir; **Excel (CSV)** veya **görselli HTML rapor** olarak kaydedilir.
+- **Modern Windows 11 görünümü:** açık / koyu tema, özet kartları (toplam, metin, görsel, sohbet),
+  sonuçlarda anlık arama ve Metin / Görsel filtresi, görsel önizlemeli ayrıntı paneli.
 
 ## Mesaj kaynakları
 
@@ -49,7 +51,7 @@ Tarayıcı olarak Windows'ta zaten kurulu olan **Microsoft Edge** kullanılır; 
    telefonda *WhatsApp → Ayarlar → Bağlı cihazlar → Cihaz bağla* ile okutun.
    Oturum saklanır, bir daha QR istenmez.
 2. Sohbet listesinden taranacak sohbet ve grupları seçin (Ctrl/Shift ile çoklu seçim, üstteki
-   filtre kutusuyla arama).
+   arama kutusuyla filtreleme; filtre değişse de seçimleriniz korunur).
 3. İsterseniz sohbet başına mesaj sınırı ve başlangıç tarihi girin.
 4. **Ne aranacak?** kutusuna tabiri yazın. Örnekler:
    - `fatura`
@@ -57,8 +59,9 @@ Tarayıcı olarak Windows'ta zaten kurulu olan **Microsoft Edge** kullanılır; 
    - `içinde araç plakası görünen fotoğraflar`
    - `toplantı saati veya yeri değişikliği`
 5. **Görselleri de tara** işaretliyse fotoğraflar da Claude'a gösterilir.
-6. **▶ Taramayı başlat**. Sonuçlar geldikçe tabloya eklenir. Bir satıra tıklayınca altta
-   tam metin ve görsel önizlemesi görünür; çift tıklayınca görsel büyük açılır.
+6. **Taramayı başlat**. Sonuçlar geldikçe tabloya eklenir. Üstteki kutuyla sonuçlarda arayabilir,
+   Tümü / Metin / Görsel ile süzebilir, sütun başlığına tıklayarak sıralayabilirsiniz. Bir satıra
+   tıklayınca altta tam metin ve görsel önizlemesi görünür; çift tıklayınca görsel büyük açılır.
 7. **Excel (CSV) kaydet** / **HTML rapor kaydet** ile sonuçları dışa aktarın.
 
 ### Yapay zekâ ayarları
@@ -106,7 +109,7 @@ Proje yapısı:
 
 ```
 app.py                       # GUI başlatıcı
-wpfilter/gui.py              # Tkinter arayüz
+wpfilter/gui.py              # Tkinter + sv-ttk (Windows 11) arayüz
 wpfilter/claude_backend.py   # Claude Code (abonelik) ve API arka uçları
 wpfilter/matcher.py          # Metin + görsel eşleştirme motoru
 wpfilter/report.py           # CSV / HTML rapor

@@ -8,7 +8,7 @@ if not exist ".venv\Scripts\python.exe" (
 )
 ".venv\Scripts\python.exe" -m pip install pyinstaller
 ".venv\Scripts\python.exe" -m PyInstaller --noconfirm --windowed --name WhatsAppTabirTarayici ^
-    --collect-data playwright --collect-submodules wpfilter app.py
+    --collect-data playwright --collect-data sv_ttk --collect-submodules wpfilter app.py
 echo.
 echo Hazir: dist\WhatsAppTabirTarayici\WhatsAppTabirTarayici.exe
 pause

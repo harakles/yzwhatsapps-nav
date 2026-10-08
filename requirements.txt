@@ -1,4 +1,5 @@
 pillow>=10.0
+sv-ttk>=2.6
 playwright>=1.45
 anthropic>=0.60
 pywinauto>=0.6.8; sys_platform == "win32"
