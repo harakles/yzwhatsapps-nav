@@ -14,6 +14,14 @@ tabire / kritere uyanları **Claude yapay zekâsı** ile ayıklayıp listeleyen 
 - **Modern Windows 11 görünümü:** açık / koyu tema, özet kartları (toplam, metin, görsel, sohbet),
   sonuçlarda anlık arama ve Metin / Görsel filtresi, görsel önizlemeli ayrıntı paneli.
 
+![Koyu tema](docs/arayuz_koyu.png)
+
+<details><summary>Açık tema</summary>
+
+![Açık tema](docs/arayuz_acik.png)
+
+</details>
+
 ## Mesaj kaynakları
 
 | Sekme | Nasıl çalışır | Ne zaman |
